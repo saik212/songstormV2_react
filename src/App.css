@@ -1,0 +1,153 @@
+.app-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+.app-wrapper > div:nth-child(odd) {
+  background: #ccc;
+}
+
+.app-wrapper > div:nth-child(even) {
+  background: #d3d3;
+}
+
+.app-wrapper > div {
+  padding: 1em;
+}
+
+
+/* Sidebar Left */
+
+.side-lt-wrapper {
+  display: grid;
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-row-gap: 1em;
+}
+
+.side-lt-wrapper > div:nth-child(odd) {
+  background: rgb(107, 22, 146);
+}
+
+.side-lt-wrapper > div:nth-child(even) {
+  background: rgba(221, 51, 221, 0.2);
+}
+
+/* Content Center */
+
+.content-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 2fr 3fr;
+  grid-row-gap: 1em;
+}
+
+.content-wrapper > div:nth-child(odd) {
+  background: rgb(204, 204, 204);
+}
+
+.content-wrapper > div:nth-child(even) {
+  background: rgba(125, 51, 221, 0.2);
+}
+
+.content-wrapper > div {
+  padding: 1em;
+}
+
+/* Songs Content Center */
+
+.song-content-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 4fr 4fr 1fr;
+  grid-row-gap: 1em;
+}
+
+.song-content-wrapper > div:nth-child(odd) {
+  background: rgb(204, 150, 204);
+}
+
+.song-content-wrapper > div:nth-child(even) {
+  background: rgba(125, 89, 100, 0.2);
+}
+
+.song-content-wrapper > div {
+  padding: 1em;
+}
+
+/* Song Content Navigation */
+
+.song-content-navigation {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+}
+
+.song-content-navigation > div:nth-child(odd) {
+  background: rgb(204, 204, 204);
+}
+
+.song-content-navigation > div:nth-child(even) {
+  background: rgba(125, 51, 221, 0.2);
+}
+
+/* Song List */
+
+.song-list {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+  padding-top: 3em;
+}
+
+.song-list > div {
+  padding: 2em 1em;
+}
+
+.song-list > div:nth-child(odd) {
+  background: rgb(8, 82, 85);
+}
+
+.song-list > div:nth-child(even) {
+  background: rgba(19, 46, 165, 0.2);
+}
+
+
+/* Browse Wrapper */
+.browse-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+  padding-top: 3em;
+}
+
+.browse-wrapper > div {
+  padding: 2em 1em;
+}
+
+.browse-wrapper > div:nth-child(odd) {
+  background: rgb(8, 82, 85);
+}
+
+.browse-wrapper > div:nth-child(even) {
+    background: rgba(19, 46, 165, 0.2);
+}
+
+/* Login Wrapper */
+.login-wrapper {
+    display: grid;
+    grid-row-gap: 2em;
+    justify-items: center;
+}
+
+.login-wrapper > div {
+    padding: 1em;
+}
+
+.login-wrapper > div:nth-child(odd) {
+    background: rgb( 128, 79, 89, 1);
+}
+
+.login-wrapper > div:nth-child(even) {
+    background: rgb( 100, 133, 155);
+}

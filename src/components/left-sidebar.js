@@ -12,7 +12,14 @@ class LeftSidebar extends Component {
         <div>box 1</div>
 				<div>
           {(!this.props.user.username) ? 
-          <Link to='/login'>Log In</Link>
+          [
+          <div>
+            <Link to='/login'>Log In</Link>
+          </div>,
+          <div>
+            <Link to='/register'>Register</Link>
+          </div>
+          ]
           :
           <a href="#" onClick={this.props.logout}>Logout</a>
         }
